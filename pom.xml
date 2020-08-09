@@ -2,6 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
+	<modules>
+		<module>business</module>
+		<module>infra</module>
+	</modules>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -13,6 +19,7 @@
 	<artifactId>consuming-web-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>consuming-web-service</name>
+	<packaging>pom</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -25,6 +32,7 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 		<!-- tag::dependency[] -->
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
@@ -39,8 +47,8 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-currencyService</artifactId>
-			<scope>currencyService</scope>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 			<exclusions>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
@@ -74,7 +82,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
 			<!-- tag::wsdl[] -->
+			<!--
 			<plugin>
 					<groupId>org.jvnet.jaxb2.maven2</groupId>
 					<artifactId>maven-jaxb2-plugin</artifactId>
@@ -96,7 +106,9 @@
 						</schemas>
 					</configuration>
 			</plugin>
+			-->
 			<!-- end::wsdl[] -->
+			
 		</plugins>
 	</build>
 

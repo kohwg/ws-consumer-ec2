@@ -22,7 +22,7 @@ public class CountryConfiguration {
 
 	@Bean
 	public CurrencyService currencyService(Jaxb2Marshaller marshaller) {
-		currencyService.setDefaultUri("http://localhost:8080/ws");
+		currencyService.setDefaultUri("https://zaxawrocp5.execute-api.ap-northeast-2.amazonaws.com/DEV/ws-producer/ws");
 		currencyService.setMarshaller(marshaller);
 		currencyService.setUnmarshaller(marshaller);
 		return currencyService;

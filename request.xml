@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+   <soapenv:Header/>
+   <soapenv:Body>
+        <urn:YFM_AWS_WS01>
+            <IP_FIRSTNAME>Wongyung</IP_FIRSTNAME>
+            <IP_LASTNAME>KOH</IP_LASTNAME>
+        </urn:YFM_AWS_WS01>
+      </gs:getCountryRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

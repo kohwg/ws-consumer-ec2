@@ -14,7 +14,7 @@ configurations {
 task genJaxb {
     ext.sourcesDir = "${buildDir}/generated-sources/jaxb"
     ext.classesDir = "${buildDir}/classes/jaxb"
-    ext.schema = "http://localhost:8080/ws/countries.wsdl"
+    ext.schema = "http://ec2-3-35-26-230.ap-northeast-2.compute.amazonaws.com:8080/ws-producer/ws/countries.wsdl"
 
     outputs.dir classesDir
 

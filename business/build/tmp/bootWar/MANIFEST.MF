@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Start-Class: com.example.consumingwebservice.business.ConsumingWebServ
+ iceApplication
+Spring-Boot-Classes: WEB-INF/classes/
+Spring-Boot-Lib: WEB-INF/lib/
+Spring-Boot-Version: 2.2.0.RELEASE
+Main-Class: org.springframework.boot.loader.WarLauncher
+

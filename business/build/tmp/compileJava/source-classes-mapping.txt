@@ -1,0 +1,8 @@
+com/example/consumingwebservice/business/application/CountryService.java
+ com.example.consumingwebservice.business.application.CountryService
+com/example/consumingwebservice/business/ConsumingWebServiceApplication.java
+ com.example.consumingwebservice.business.ConsumingWebServiceApplication
+com/example/consumingwebservice/business/ui/CurrencyController.java
+ com.example.consumingwebservice.business.ui.CurrencyController
+com/example/consumingwebservice/business/config/CountryConfiguration.java
+ com.example.consumingwebservice.business.config.CountryConfiguration

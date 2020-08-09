@@ -1,0 +1,4 @@
+com/example/consumingwebservice/domain/CurrencyService.java
+ com.example.consumingwebservice.domain.CurrencyService
+com/example/consumingwebservice/infra/CurrencyServiceWsdl.java
+ com.example.consumingwebservice.infra.CurrencyServiceWsdl

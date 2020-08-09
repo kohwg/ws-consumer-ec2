@@ -12,8 +12,19 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+//war packaging add
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+
+
 @SpringBootApplication(scanBasePackages = "com.example.consumingwebservice")
-public class ConsumingWebServiceApplication {
+//war packaging add extends ..xxx
+public class ConsumingWebServiceApplication extends SpringBootServletInitializer {
+	//war packaging add
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(ConsumingWebServiceApplication.class);
+	}
 
 	@Autowired
 	private CountryService countryService;
